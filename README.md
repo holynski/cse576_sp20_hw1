@@ -13,6 +13,10 @@ Download from github.
 
     git clone https://github.com/holynski/cse576_sp20_hw1
 
+### Install CMake ###
+
+    https://cmake.org/install/
+
 ### Compile ###
 We will build the library using `cmake` and `make`. Conveniently there is a bash script `compile.sh`, that does that for you. We advise to use Linux or MacOS for the homework since setting up cmake and make will be simpler.
 
