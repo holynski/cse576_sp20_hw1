@@ -280,6 +280,8 @@ X = C * (1 - abs((6*H mod 2) - 1)  // You can use the fmod() function to do a fl
 m = V - C
 ```
 
+Note: Make sure that you use floating points! 1/6 with integer division is zero.
+
 <img src="figs/hsv_to_rgb.svg" width="256">
 
 
