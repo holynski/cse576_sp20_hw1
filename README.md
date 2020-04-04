@@ -36,50 +36,7 @@ Or if you want to compile manually do this:
     make -j4
 
 #### Windows ####
-For windows, first install cmake and look at this [video](https://www.youtube.com/watch?v=gYmgbqGfv-8) to use cmake with Visual Studio. Since there are no external dependencies, if you're familiar with Visual Studio, you can also create a project and import the .H and .CPP files directly. Online resources should be enough to get things going, but if you get stuck the TAs are there to help you.
-
-For creating your project in Visual Studio (2017) directly follow the instructions:
-
-    Start Visual Studio 2017
-    Click File New Project from Existinng Code
-    On Welcome Screen make sure Visual C++ is selected
-    Click Next
-    On the next screen
-    Add Path to src folder in "Project File Location"
-    E.g. D:\Projects\MySandBox\UW_CS576\HW1\src
-    Give a name in Project Name (e.g.UW_CS576_HW1)
-    Check "Add files to the project from these folders"
-    Check "Add Subfolders"
-    Check "Show all files in Solution Explorer"
-    Click Next
-    In specify Project Settings
-    Check Use Visual Studio
-    In Project Type Select Console Application Project
-    Click Next
-    In Specify Debug Configurations Click Next
-    In Specify Release Configurations Check Same as Debug Configuration
-    Click Finish
-
-    You should see all the Source and Header files in the Solution Explorer
-    Double click on test.c to see the Source in the sourcfe window
-    test0.cpp has the main() function
-    Choose Debug X64/x86 in the Config boxes in the top Menu
-
-    In the Solution Explorer Window on the right
-    Right Click on the <Project Name> and Click Build
-    Your project should build without errors
-
-    Build Output window should show:
-    1>UW_CS576_HW1.vcxproj -> D:\Projects\MySandBox\UW_CS576\HW1\src\x64\Debug\UW_CS576_HW1.exe
-    ========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========
-
-    You can Build the Release Version also by choosing 
-    Release   X64/x86
-    Right Click on the <Project Name> and Click Build
-    Your project should build without errors
-
-    1>UW_CS576_HW1.vcxproj -> D:\Projects\MySandBox\UW_CS576\HW1\src\x64\Release\UW_CS576_HW1.exe
-    ========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========
+Please see [Instructions for Windows](README-Windows.md)
 
 ##### Execution #####
 
