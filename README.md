@@ -36,7 +36,28 @@ Or if you want to compile manually do this:
     make -j4
 
 #### Windows ####
-For windows, first install cmake and look at this [video](https://www.youtube.com/watch?v=gYmgbqGfv-8) to use cmake with Visual Studio. Since there are no external dependencies, if you're familiar with Visual Studio, you can also create a project and import the .H and .CPP files directly. Online resources should be enough to get things going, but if you get stuck the TAs are there to help you.
+Please see [Instructions for Windows](README-Windows.md)
+
+##### Execution #####
+
+    If you run the program from the Windows Command Line Console (started using "cmd" in the Windows Search window at the bottom left),
+    cd to the main directory as your working directory: e.g. D:\Projects\MySandBox\UW_CS576\HW1
+    This will be your working directory
+    To run the test program, give the full pathname: e.g.
+    "D:\Projects\MySandBox\UW_CS576\HW1\src\x64\Release\UW_CS576_HW1.exe"
+    Note that "UW_CS576_HW1.exe" is the executable for the program you built called "test0"
+
+##### For Debugging in VS ######
+
+    Choose the Debug  X64/x86 setting and Build the Project
+    In Projects->Properties Options Window
+    Choose "Debugging" from the left panel "Configuration Properties"
+    On the right Window,
+    In Working Directory, enter the path to the build directory of the project: 
+    e.g. D:\Projects\MySandBox\UW_CS576\HW1
+
+    Run the program. A console window will show the output.
+    If you want to have the window remain open while you see the output put breakpoints appropriately in the source and run with stepping through the code.
 
 
 ### Run/Test ###
@@ -279,6 +300,8 @@ C = V * S
 X = C * (1 - abs((6*H mod 2) - 1)  // You can use the fmod() function to do a floating point modulo.
 m = V - C
 ```
+
+Note: Make sure that you use floating points! 1/6 with integer division is zero.
 
 <img src="figs/hsv_to_rgb.svg" width="256">
 
