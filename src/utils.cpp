@@ -20,7 +20,7 @@ bool operator ==(const Image& a, const Image& b)
   
   for(int i = 0; i < a.w*a.h*a.c; ++i) if(!within_eps(a.data[i], b.data[i])) 
     {
-    printf("The value at %d %d %d should be %f, but it is %f! \n", i/(a.w*a.h), (i%(a.w*a.h))/a.w, (i%(a.w*a.h))%a.w, b.data[i], a.data[i]);
+    printf("The value at %d %d %d should be %f, but it is %f! \n", (i%(a.w*a.h))%a.w, (i%(a.w*a.h))/a.w, i/(a.w*a.h), b.data[i], a.data[i]);
     return 0;
     }
   return 1;
