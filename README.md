@@ -297,7 +297,7 @@ Okay, now let's do the reverse transformation. You can use the following equatio
 
 // Given the H, S, V channels of an image:
 C = V * S
-X = C * (1 - abs((6*H mod 2) - 1)  // You can use the fmod() function to do a floating point modulo.
+X = C * (1 - abs((6*H mod 2) - 1))  // You can use the fmod() function to do a floating point modulo.
 m = V - C
 ```
 
