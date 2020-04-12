@@ -160,7 +160,7 @@ Implement the following two functions in `src/access_image.cpp`:
     float get_clamped_pixel(const Image& im, int x, int y, int ch);
     void set_pixel(Image& im, int x, int y, int c, float value);
 
-`set_pixel` should simply return without doing anything if you pass in out-of-bounds coordinates. For `get_clamped_pixel` we will perform padding to the image.
+`set_pixel` should simply return without doing anything if you pass in out-of-bounds coordinates (pixel coordinates greater than the width or height, or less than zero). For `get_clamped_pixel` we will perform padding to the image.
 
 Note that you can use the `()` operator e.g., `im(3, 2, 0)` to access pixels.
 
